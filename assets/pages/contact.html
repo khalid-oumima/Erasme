@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erasme</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="../img/icon/favicon.png" type="image/x-icon">
+    <!-- ===== Google Fonts ===== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    
+    <style>
+          @media screen and (max-width: 768px) {
+                            .contact {
+                                margin-top: -200px;
+                            }
+                        }
+    </style>
+
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="../../index.html"><img src="../img/logo/Erasme-logo.png" alt="Erasme" draggable="false"></a>
+              <div class="nav-links" id="navLinks">
+                  <i class="fa fa-times" onclick="hideMenu()"></i>
+                  <ul>
+                      <li><a href="../../index.html">Accueil</a></li>
+                      <li><a href="./about.html">Notre école</a></li>
+                      <!-- DROPDOWN -->
+                      <li class="dropdown">
+                          <a href="./formation.html" class="dropbtn">Formation</a>
+                          <div class="dropdown-content">
+                              <p>Pré-bac(Lycée)</p>
+                              <a href="" style="color: #333;">1er cycle</a>
+                              <p>Post-bac Enseignement supérieur</p>
+                              <a href="" style="color: #333;">BTS</a>
+                              <a href="" style="color: #333;">CPGE</a>
+                          </div>
+                      </li>
+                      <!-- FIN DROPDOWN -->
+                      <li><a href="./inscription.html">Inscription</a></li>
+                      <li><a href="./contact.html">Contact</a></li>
+                  </ul>
+              </div>
+              <i class="fa fa-bars" onclick="showMenu()"></i>
+          </nav>
+
+        <h1>Contact</h1>
+    </section>
+
+    <!-------CONTACT------->
+    <section class="contact" id="contact">
+
+        <h1 class="heading">Contactez-nous</h1>
+
+        <div class="row">
+            <div class="image">
+                <img src="../img/contact.png" alt="">
+            </div>
+
+            <form action="">
+                <h3>send us a message</h3>
+                <input type="text" placeholder="name" class="box">
+                <input type="email" placeholder="email" class="box">
+                <input type="texte" placeholder="phone number" class="box">
+                <textarea placeholder="message" cols="20" rows="4" class="box"></textarea>
+                <a href="#" class="btn">
+                    <span class="text text-1">send message</span>
+                    <span class="text text-2" aria-hidden="true">send message</span>
+                </a>
+            </form>
+        </div>
+
+    </section>
+    <!-- FIN CONTACT -->
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>Trouve-nous ici</h3>
+                <p>Vous pouvez nous suivre sur nos réseaux</p>
+                <div class="share">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="www.linkedin.com/in/khalid-oumima-b47ab632a" class="fa fa-linkedin"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>Contactez-nous</h3>
+                <p>+33 523-483243</p>
+                <a href="mailto:LGE@gmail.com" class="link">BFC-ECLAT@gmail.com</a>
+            </div>
+
+            <div class="box">
+                <h3>Localisation</h3>
+                <p>Erasme <br> 21000 Dijon<br> France </p>
+            </div>
+
+        </div>
+
+        <div class="credit">Made with &hearts; by khalid oumima | Tous droits réservés 2025 &copy;</div>
+
+    </section>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/utils.js"></script>
+
+</body>
+
+</html>

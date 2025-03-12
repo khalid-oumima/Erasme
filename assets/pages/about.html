@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erasme</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="../img/icon/favicon.png" type="image/x-icon">
+     <!-- ===== Google Fonts ===== -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+     
+    <style>
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            overflow-x: auto;
+            padding: 20px 0;
+        }
+        
+        .BRANCHES-col {
+            flex: 0 0 auto;
+            width: calc(100% / 3 - 20px);
+            margin: 0 10px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        
+        .BRANCHES-col img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        @media only screen and (max-width: 768px) {
+            .about-us {
+                            margin-top: -220px;
+                        }
+        } 
+        .statistics-section {
+                            
+                            margin-bottom: 200px;
+                        }
+    </style>
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="../../index.html"><img src="../img/logo/Erasme-logo.png" alt="Erasme" draggable="false"></a>
+              <div class="nav-links" id="navLinks">
+                  <i class="fa fa-times" onclick="hideMenu()"></i>
+                  <ul>
+                      <li><a class="vip" href="../../index.html">Accueil</a></li>
+                      <li><a class="vip" href="./about.html">Notre école</a></li>
+                      <!-- DROPDOWN -->
+                      <li class="dropdown">
+                          <a class="vip" href="./formation.html" class="dropbtn">Formation</a>
+                          <div class="dropdown-content">
+                              <p>Pré-bac(Lycée)</p>
+                              <a href="" style="color: #333;">1er cycle</a>
+                              <p>Post-bac Enseignement supérieur</p>
+                              <a href="" style="color: #333;">BTS</a>
+                              <a href="" style="color: #333;">CPGE</a>
+                          </div>
+                      </li>
+                      <!-- FIN DROPDOWN -->
+                      <li><a class="vip" href="./inscription.html">Inscription</a></li>
+                      <li><a class="vip" href="./contact.html">Contact</a></li>
+                  </ul>
+              </div>
+              <i class="fa fa-bars" onclick="showMenu()"></i>
+          </nav>
+
+        <h1>Présentation de l'établissement</h1>
+    </section>
+    <!-------A propos contennu------->
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>Bienvenue à Erasme, École d’Enseignement Supérieur<br> </h1>
+                <p>Erasme est une institution d’enseignement supérieur engagée dans la formation des leaders de demain. Avec un programme académique innovant et une approche pédagogique axée sur l’excellence, nous préparons nos étudiants aux défis du monde professionnel et aux évolutions technologiques.
+
+                    Notre école propose un large éventail de formations dans des domaines variés tels que l’ingénierie, le management, les technologies numériques et bien plus encore. Grâce à un corps enseignant qualifié, des infrastructures modernes et des partenariats internationaux, nous offrons à nos étudiants une expérience d’apprentissage enrichissante et tournée vers l’avenir.
+                    
+                    Chez Erasme, nous croyons en une éducation qui allie savoir théorique et pratique, encourageant l’innovation, la créativité et l’esprit d’initiative. Rejoindre notre établissement, c’est faire le choix d’un parcours académique d’excellence et d’une ouverture sur le monde.
+                    
+                    🚀 Erasme, votre avenir commence ici !</p>
+                <!-- <a href="" class="hero-btn red-btn">EXPLORE NOW </a> -->
+
+            </div>
+            <div style="align-self: center;" class="about-col">
+                <img style="border-radius: 8px;" src="../img/Banner.jpg" alt="">
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="statistics-section">
+        <div class="containeer">
+            <h2>école en Chiffres</h2>
+            <div class="statistics">
+                <div class="stat-item">
+                    <h3>Étudiants</h3>
+                    <p>1200</p>
+                </div>
+                <div class="stat-item">
+                    <h3>Professeurs</h3>
+                    <p>85</p>
+                </div>
+                <div class="stat-item">
+                    <h3>Classes</h3>
+                    <p>35</p>
+                </div>
+                <div class="stat-item">
+                    <h3>Activités Extra-scolaires</h3>
+                    <p>20</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-us">
+        <h1>Venir a</h1>
+        <div class="carte">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4797.355618044889!2d5.067412330337304!3d47.312056224336985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f29e6da882ffe1%3A0x7aa707ffd7410089!2sErasme!5e1!3m2!1sfr!2sfr!4v1741310064728!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>Trouve-nous ici</h3>
+                <p>Vous pouvez nous suivre sur nos réseaux</p>
+                <div class="share">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="www.linkedin.com/in/khalid-oumima-b47ab632a" class="fa fa-linkedin"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>Contactez-nous</h3>
+                <p>+33 523-483243</p>
+                <a href="mailto:LGE@gmail.com" class="link">BFC-ECLAT@gmail.com</a>
+            </div>
+
+            <div class="box">
+                <h3>Localisation</h3>
+                <p>Erasme <br> 21000 Dijon<br> France </p>
+            </div>
+
+        </div>
+
+        <div class="credit">Made with &hearts; by khalid oumima | Tous droits réservés 2025 &copy;</div>
+
+    </section>
+
+
+    <script src="../js/main.js"></script>
+    <script src="../js/utils.js"></script>
+    
+</body>
+
+</html>
