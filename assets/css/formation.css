@@ -58,11 +58,18 @@ body {
 
 @media (max-width: 768px) {
     .formation { 
-        margin-top: -200px;
+        margin-top: -150px;
     }
     .formation h1 {
 
         /* text-align: center; */
         padding: auto;
     }
+}
+
+@media only screen and (max-width: 600px) {
+   .cardu {
+    width: 460px;
+   }
+ 
 }
