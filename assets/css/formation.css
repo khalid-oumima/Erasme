@@ -58,12 +58,12 @@ body {
 
 @media (max-width: 768px) {
   .formation {
-    padding: 0 8px;
-    margin-top: -100px;
+    padding: 0 16px;
+    margin-top: -80px;
   }
   .formation h1 {
     text-align: center;
-    padding: 8px 0;
+    margin: 8px 0;
   }
 }
 
