@@ -1,337 +1,412 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <!-- ===== CSS ===== -->
-    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/styles.css" />
 
     <!-- ===== font awesome ===== -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
     <!-- ===== Favicon ===== -->
-    <link rel="icon" href="./assets/img/icon/favicon.png" type="image/x-icon">
+    <link rel="icon" href="./assets/img/icon/favicon.png" type="image/x-icon" />
 
     <!-- ===== Google Fonts ===== -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Erasme</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <section class="header">
-        <nav>
-          <a href="./index.html"><img src="./assets/img/logo/Erasme-logo.png" alt="Erasme" draggable="false"></a>
-            <div class="nav-links" id="navLinks">
-                <i class="fa fa-times" onclick="hideMenu()"></i>
-                <ul>
-                    <li><a class="vip" href="./index.html">Accueil</a></li>
-                    <li><a class="vip" href="./assets/pages/about.html">Notre école</a></li>
-                    <!-- DROPDOWN -->
-                    <li class="dropdown">
-                        <a  href="./assets/pages/formation.html" class="dropbtn vip">Formation</a>
-                        <!--div class="dropdown-content">
+      <nav>
+        <a href="./index.html"
+          ><img
+            src="./assets/img/logo/Erasme-logo.png"
+            alt="Erasme"
+            draggable="false"
+        /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a class="vip" href="./index.html">Accueil</a></li>
+            <li>
+              <a class="vip" href="./assets/pages/about.html">Notre école</a>
+            </li>
+            <!-- DROPDOWN -->
+            <li class="dropdown">
+              <a href="./assets/pages/formation.html" class="dropbtn vip">Formation</a
+              >
+              <!--div class="dropdown-content">
                             <p>Pré-bac(Lycée)</p>
                             <a href="" style="color: #333;">1er cycle</a>
                             <p>Post-bac Enseignement supérieur</p>
                             <a href="" style="color: #333;">BTS</a>
                             <a href="" style="color: #333;">CPGE</a>
                         </div-->
-                    </li>
-                    <!-- FIN DROPDOWN -->
-                    <li><a class="vip" href="./assets/pages/inscription.html">Inscription</a></li>
-                    <li><a class="vip" href="./assets/pages/contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <i class="fa fa-bars" onclick="showMenu()"></i>
-        </nav>
+            </li>
+            <!-- FIN DROPDOWN -->
+            <li>
+              <a class="vip" href="./assets/pages/inscription.html"
+                >Inscription</a
+              >
+            </li>
+            <li>
+              <a class="vip" href="./assets/pages/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
     </section>
 
     <!-- SLIDESHOW -->
-    <!--h1 class="heading" style="margin-top: 1.6rem;">A LA UNE</h1-->
+    <!--h1 class="heading" style="margin-top: 4%">A LA UNE</h1-->
     <div class="slideshow-container">
-
-        <div class="mySlides fade">
-            <div class="numbertext">1 / 3</div>
-            <img src="./assets/img/Slides/Slide01.jpg" style="width:100%;" draggable="false">
-            <div class="text-caption">L’éducation moderne repose sur l’échange et la collaboration. Cette image illustre parfaitement l’importance du travail en groupe dans un environnement ...</div>
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img
+          src="./assets/img/Slides/Slide01.jpg"
+          style="width: 100%"
+          draggable="false"
+        />
+        <div class="text-caption">
+          L’éducation moderne repose sur l’échange et la collaboration. Cette
+          image illustre parfaitement l’importance du travail en groupe dans un
+          environnement ...
         </div>
+      </div>
 
-        <div class="mySlides fade">
-            <div class="numbertext">2 / 3</div>
-            <img src="./assets/img/Slides/Slide02.jpg" style="width:100%;" draggable="false">
-            <div class="text-caption">L’apprentissage ne se limite pas aux salles de classe, il s’épanouit dans un environnement propice à l’innovation et à l’échange. Ce campus, à l’architecture moderne ...</div>
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img
+          src="./assets/img/Slides/Slide02.jpg"
+          style="width: 100%"
+          draggable="false"
+        />
+        <div class="text-caption">
+          L’apprentissage ne se limite pas aux salles de classe, il s’épanouit
+          dans un environnement propice à l’innovation et à l’échange. Ce
+          campus, à l’architecture moderne ...
         </div>
+      </div>
 
-        <div class="mySlides fade">
-            <div class="numbertext">3 / 3</div>
-            <img src="./assets/img/Slides/Slide03.jpg" style="width:100%;" draggable="false">
-            <div class="text-caption">L’éducation en ingénierie ne se limite pas à la théorie : elle prend vie dans les laboratoires et les ateliers ! Cette image illustre parfaitement l’apprentissage ...</div>
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img
+          src="./assets/img/Slides/Slide03.jpg"
+          style="width: 100%"
+          draggable="false"
+        />
+        <div class="text-caption">
+          L’éducation en ingénierie ne se limite pas à la théorie : elle prend
+          vie dans les laboratoires et les ateliers ! Cette image illustre
+          parfaitement l’apprentissage ...
         </div>
+      </div>
 
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
-    
 
-    <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
+    <div style="text-align: center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
     </div>
     <!-- FIN SLIDESHOW -->
     <!-- EN CE MOMENT -->
-    <h1 class="heading" style="margin-top: 4%;">LES ACTUALITÉS</h1>
+    <h1 class="heading" style="margin-top: 4%">LES ACTUALITÉS</h1>
     <div class="flex-container">
-
-        <div class="card">
-            <img src="./assets/img/IA.jpg" alt="" draggable="false">
-            <div class="card-content">
-                <p class="date">7 mai 2024</p>
-                <h2>Plongée dans l’Intelligence Artificielle : Forum Éducatif</h2>
-                <p>Les élèves ont participé à un forum passionnant sur l’Intelligence Artificielle, explorant ses applications et enjeux futurs. Une occasion unique d’échanger avec des experts et de mieux comprendre les défis de demain !</p>
-                <a href="#" class="read-more">Lire la suite &raquo;</a>
-            </div>
+      <div class="card">
+        <img src="./assets/img/IA.jpg" alt="" draggable="false" />
+        <div class="card-content">
+          <p class="date">7 mai 2024</p>
+          <h2>Plongée dans l’Intelligence Artificielle : Forum Éducatif</h2>
+          <p>
+            Les élèves ont participé à un forum passionnant sur l’Intelligence
+            Artificielle, explorant ses applications et enjeux futurs. Une
+            occasion unique d’échanger avec des experts et de mieux comprendre
+            les défis de demain !
+          </p>
+          <a href="#" class="read-more">Lire la suite &raquo;</a>
         </div>
+      </div>
 
-        <div class="card">
-            <img src="./assets/img/lycee.jpg" alt="" draggable="false">
-            <div class="card-content">
-                <p class="date">13 janvier 2024</p>
-                <h2>Lancement du Cycle Préparatoire Intégré à Erasme</h2>
-                <p>L'école Erasme inaugure son tout nouveau Cycle Préparatoire Intégré ! Une formation conçue pour préparer les étudiants aux grandes écoles avec un accompagnement pédagogique renforcé et un programme adapté aux exigences académiques.</p>
-                <a href="#" class="read-more">Lire la suite &raquo;</a>
-            </div>
+      <div class="card">
+        <img src="./assets/img/lycee.jpg" alt="" draggable="false" />
+        <div class="card-content">
+          <p class="date">13 janvier 2024</p>
+          <h2>Lancement du Cycle Préparatoire Intégré à Erasme</h2>
+          <p>
+            L'école Erasme inaugure son tout nouveau Cycle Préparatoire Intégré
+            ! Une formation conçue pour préparer les étudiants aux grandes
+            écoles avec un accompagnement pédagogique renforcé et un programme
+            adapté aux exigences académiques.
+          </p>
+          <a href="#" class="read-more">Lire la suite &raquo;</a>
         </div>
+      </div>
 
-        <div class="card">
-            <img src="./assets/img/Andres.jpg" alt="" draggable="false">
-            <div class="card-content">
-                <p class="date">02 décembre 2023</p>
-                <h2>À la découverte de la Suède : Une visite étudiante inoubliable</h2>
-                <p>Nos étudiants ont eu l’opportunité d’explorer la Suède, une immersion enrichissante au cœur de la culture nordique. Entre découvertes académiques et échanges internationaux, cette expérience restera gravée dans leurs mémoires ! 🇸🇪✨</p>
-                <a href="#" class="read-more">Lire la suite &raquo;</a>
-            </div>
+      <div class="card">
+        <img src="./assets/img/Andres.jpg" alt="" draggable="false" />
+        <div class="card-content">
+          <p class="date">02 décembre 2023</p>
+          <h2>
+            À la découverte de la Suède : Une visite étudiante inoubliable
+          </h2>
+          <p>
+            Nos étudiants ont eu l’opportunité d’explorer la Suède, une
+            immersion enrichissante au cœur de la culture nordique. Entre
+            découvertes académiques et échanges internationaux, cette expérience
+            restera gravée dans leurs mémoires ! 🇸🇪✨
+          </p>
+          <a href="#" class="read-more">Lire la suite &raquo;</a>
         </div>
+      </div>
     </div>
     <!-- FIN EN CE MOMENT -->
     <!-- NOS FORMATIONS -->
     <section class="subjects">
+      <h1 class="heading" style="margin-top: 4%;">NOS FORMATIONS</h1>
 
-        <h1 class="heading">NOS FORMATIONS</h1>
-
-        <div class="box-container">
-
-            <div class="box">
-                <img src="./assets/img/subject-1.png" alt="" draggable="false">
-                <h3>Sciences & Ingénierie</h3>
-                <p>Cycle Préparatoire Intégré (CPI)</p>
-                    <p>Génie Informatique et Intelligence Artificielle</p>
-                   <p>Génie Électrique et Énergies Renouvelables</p> 
-                  <p>Génie Mécanique et Robotique</p>  
-                 <p>Génie Civil et Architecture</p>   
-            </div>
-
-            <div class="box">
-                <img src="./assets/img/subject-2.png" alt="" draggable="false">
-                <h3>Business & Management</h3>
-                <p>Gestion et Administration des Entreprises</p>
-                <p>Marketing Digital et Communication</p>
-                <p>Finance et Comptabilité</p>
-                <p>Entrepreneuriat et Innovation</p>
-            </div>
-
-            <div class="box">
-                <img src="./assets/img/subject-3.png" alt="" draggable="false">
-                <h3>Arts, Design & Communication</h3>
-                <p>Design Graphique et Multimédia</p>
-                <p>Production Audiovisuelle et Cinéma</p>
-                <p>Journalisme et Médias Numériques</p>
-            </div>
-
-            <div class="box">
-                <img src="./assets/img/subject-4.png" alt="" draggable="false">
-                <h3>Numérique & Technologies</h3>
-                <p>Développement Web et Mobile</p>
-                    <p>Cybersécurité et Réseaux</p>
-                    <p>Big Data et Intelligence Artificielle</p>
-                    <p>Blockchain et Fintech</p>
-            </div>
-
+      <div class="box-container">
+        <div class="box">
+          <img src="./assets/img/subject-1.png" alt="" draggable="false" />
+          <h3>Sciences & Ingénierie</h3>
+          <p>Cycle Préparatoire Intégré (CPI)</p>
+          <p>Génie Informatique et Intelligence Artificielle</p>
+          <p>Génie Électrique et Énergies Renouvelables</p>
+          <p>Génie Mécanique et Robotique</p>
+          <p>Génie Civil et Architecture</p>
         </div>
 
+        <div class="box">
+          <img src="./assets/img/subject-2.png" alt="" draggable="false" />
+          <h3>Business & Management</h3>
+          <p>Gestion et Administration des Entreprises</p>
+          <p>Marketing Digital et Communication</p>
+          <p>Finance et Comptabilité</p>
+          <p>Entrepreneuriat et Innovation</p>
+        </div>
+
+        <div class="box">
+          <img src="./assets/img/subject-3.png" alt="" draggable="false" />
+          <h3>Arts, Design & Communication</h3>
+          <p>Design Graphique et Multimédia</p>
+          <p>Production Audiovisuelle et Cinéma</p>
+          <p>Journalisme et Médias Numériques</p>
+        </div>
+
+        <div class="box">
+          <img src="./assets/img/subject-4.png" alt="" draggable="false" />
+          <h3>Numérique & Technologies</h3>
+          <p>Développement Web et Mobile</p>
+          <p>Cybersécurité et Réseaux</p>
+          <p>Big Data et Intelligence Artificielle</p>
+          <p>Blockchain et Fintech</p>
+        </div>
+      </div>
     </section>
 
     <!--Campus section-->
-    
-<section class="campus">
-    <h1>Nos Campus à Travers le Monde</h1>
-    <p>Erasme, Un Campus Sans Frontières</p>
-    <div class="row"> 
-        <div class="campus-col">
-            <img src="./assets/img/campus01.jpg">
-            <div class="layer">
-                <h3>PARIS</h3>
-            </div>
-        </div>
 
+    <section class="campus">
+      <h1 class="heading" style="margin-top: 4%">Nos Campus à Travers le Monde</h1>
+      <p>Erasme, Un Campus Sans Frontières</p>
+      <div class="row">
         <div class="campus-col">
-            <img src="./assets/img/campus02.jpg">
-            <div class="layer">
-                <h3>NEW YORK</h3>
-            </div>
-        </div>    
+          <img src="./assets/img/campus01.jpg" />
+          <div class="layer">
+            <h3>PARIS</h3>
+          </div>
+        </div>
 
         <div class="campus-col">
-            <img src="./assets/img/campus03.jpg">
-            <div class="layer">
-                <h3>LONDON</h3>
-            </div>
-        </div>     
-    </div>
-</section>
+          <img src="./assets/img/campus02.jpg" />
+          <div class="layer">
+            <h3>NEW YORK</h3>
+          </div>
+        </div>
 
-<!---------Facilities----------->
-<section class="facilities">
-    <h1> Nos Services et Installations </h1>
-    <p>
-        Découvrez nos infrastructures de classe mondiale conçues pour offrir aux étudiants une expérience d'apprentissage enrichissante et un cadre de vie exceptionnel.
-    </p>
+        <div class="campus-col">
+          <img src="./assets/img/campus03.jpg" />
+          <div class="layer">
+            <h3>LONDON</h3>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <div class="row">
+    <!---------Facilities----------->
+    <section class="facilities">
+      <h1 class="heading" style="margin-top: 4%">Nos Services et Installations</h1>
+      <p>
+        Découvrez nos infrastructures de classe mondiale conçues pour offrir aux
+        étudiants une expérience d'apprentissage enrichissante et un cadre de
+        vie exceptionnel.
+      </p>
+
+      <div class="row">
         <div class="col">
-            <img src="./assets/img/Equip01.jpg">
-            <h3>Bibliothèque de Classe Mondiale</h3>
-            <p> Un espace moderne et inspirant avec des milliers de ressources, des espaces de travail collaboratifs et un environnement propice à l’étude et à la recherche. </p>
+          <img src="./assets/img/Equip01.jpg" />
+          <h3>Bibliothèque de Classe Mondiale</h3>
+          <p>
+            Un espace moderne et inspirant avec des milliers de ressources, des
+            espaces de travail collaboratifs et un environnement propice à
+            l’étude et à la recherche.
+          </p>
         </div>
 
         <div class="col">
-            <img src="./assets/img/Equip02.jpg">
-            <h3>Plus Grand Terrain de Jeux</h3>
-            <p> Un espace extérieur vaste et bien équipé, idéal pour se détendre, pratiquer des activités sportives et favoriser l’esprit d’équipe. </p>
+          <img src="./assets/img/Equip02.jpg" />
+          <h3>Plus Grand Terrain de Jeux</h3>
+          <p>
+            Un espace extérieur vaste et bien équipé, idéal pour se détendre,
+            pratiquer des activités sportives et favoriser l’esprit d’équipe.
+          </p>
         </div>
 
         <div class="col">
-            <img src="./assets/img/Equip03.jpg">
-            <h3>Restauration Saine et Savoureuse</h3>
-            <p> Profitez d’un large choix de repas équilibrés et délicieux, préparés avec des ingrédients frais pour répondre aux besoins de tous. </p>
+          <img src="./assets/img/Equip03.jpg" />
+          <h3>Restauration Saine et Savoureuse</h3>
+          <p>
+            Profitez d’un large choix de repas équilibrés et délicieux, préparés
+            avec des ingrédients frais pour répondre aux besoins de tous.
+          </p>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
+    <!---------Testimonials----------->
+    <section class="testimonials">
+      <h1 class="heading" style="margin-top: 4%">Témoignages de Nos Étudiants</h1>
+      <p>
+        Découvrez ce que nos anciens étudiants pensent de leur expérience sur
+        nos campus et comment cela a façonné leur avenir.
+      </p>
 
-<!---------Testimonials----------->
-<section class="testimonials">
-    <h1> Témoignages de Nos Étudiants </h1>
-    <p> Découvrez ce que nos anciens étudiants pensent de leur expérience sur nos campus et comment cela a façonné leur avenir. </p>
-
-    <div class="row">
+      <div class="row">
         <div class="test-col">
-            <img src="./assets/img/user1.jpg">
-            <div>
-                <p>
-                    "L’apprentissage ici a été une expérience incroyable ! Les professeurs sont passionnés et les infrastructures sont exceptionnelles. J’ai pu développer mes compétences et me préparer pour le monde professionnel."
+          <img src="./assets/img/user1.jpg" />
+          <div>
+            <p>
+              "L’apprentissage ici a été une expérience incroyable ! Les
+              professeurs sont passionnés et les infrastructures sont
+              exceptionnelles. J’ai pu développer mes compétences et me préparer
+              pour le monde professionnel."
+            </p>
+            <h3>Marie L.</h3>
 
-                </p>
-                <h3>Marie L.</h3>
-
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-o"></i>
-
-            </div>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
         </div>
 
         <div class="test-col">
-            <img src="./assets/img/user2.jpg">
-            <div>
-                <p>
-                    "Une expérience enrichissante tant sur le plan académique que personnel. J’ai eu l’opportunité d’étudier à l’étranger grâce aux campus internationaux, ce qui a été un vrai plus pour ma carrière."
+          <img src="./assets/img/user2.jpg" />
+          <div>
+            <p>
+              "Une expérience enrichissante tant sur le plan académique que
+              personnel. J’ai eu l’opportunité d’étudier à l’étranger grâce aux
+              campus internationaux, ce qui a été un vrai plus pour ma
+              carrière."
+            </p>
+            <h3>Alexandre D.</h3>
 
-                </p>
-                <h3>Alexandre D.</h3>
-
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-half-o"></i>
-            </div>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
         </div>
-
-    </div>
-</section>
-
+      </div>
+    </section>
 
     <!-- FIN NOS FORMATIONS -->
     <!-------CONTACT------->
     <section class="contact" id="contact">
+      <h1 class="heading" style="margin-top: 4%">Contactez-nous</h1>
 
-        <h1 class="heading" style="margin-top: 8%;">Contactez-nous</h1>
-
-        <div class="row">
-            <div class="image">
-                <img src="./assets/img/contact.png" alt="">
-            </div>
-
-            <form action="">
-                <h3>send us a message</h3>
-                <input type="text" placeholder="name" class="box">
-                <input type="email" placeholder="email" class="box">
-                <input type="texte" placeholder="phone number" class="box">
-                <textarea placeholder="message" cols="20" rows="4" class="box"></textarea>
-                <a href="#" class="btn">
-                    <span class="text text-1">send message</span>
-                    <span class="text text-2" aria-hidden="true">send message</span>
-                </a>
-            </form>
+      <div class="row">
+        <div class="image">
+          <img src="./assets/img/contact.png" alt="" />
         </div>
 
+        <form action="">
+          <h3>send us a message</h3>
+          <input type="text" placeholder="name" class="box" />
+          <input type="email" placeholder="email" class="box" />
+          <input type="texte" placeholder="phone number" class="box" />
+          <textarea
+            placeholder="message"
+            cols="20"
+            rows="4"
+            class="box"
+          ></textarea>
+          <a href="#" class="btn">
+            <span class="text text-1">send message</span>
+            <span class="text text-2" aria-hidden="true">send message</span>
+          </a>
+        </form>
+      </div>
     </section>
     <!-- FIN CONTACT -->
 
     <section class="footer">
-
-        <div class="box-container">
-
-            <div class="box">
-                <h3>Trouve-nous ici</h3>
-                <p>Vous pouvez nous suivre sur nos réseaux</p>
-                <div class="share">
-                    <a href="#" class="fa fa-facebook"></a>
-                    <a href="#" class="fa fa-twitter"></a>
-                    <a href="www.linkedin.com/in/khalid-oumima-b47ab632a" class="fa fa-linkedin"></a>
-                </div>
-            </div>
-
-            <div class="box">
-                <h3>Contactez-nous</h3>
-                <p>+33 523-483243</p>
-                <a href="mailto:LGE@gmail.com" class="link">BFC-ECLAT@gmail.com</a>
-            </div>
-
-            <div class="box">
-                <h3>Localisation</h3>
-                <p>Erasme <br> 21000 Dijon<br> France </p>
-            </div>
-
+      <div class="box-container">
+        <div class="box">
+          <h3>Trouve-nous ici</h3>
+          <p>Vous pouvez nous suivre sur nos réseaux</p>
+          <div class="share">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a
+              href="www.linkedin.com/in/khalid-oumima-b47ab632a"
+              class="fa fa-linkedin"
+            ></a>
+          </div>
         </div>
 
-        <div class="credit">Made with &hearts; by khalid oumima | Tous droits réservés 2025 &copy;</div>
+        <div class="box">
+          <h3>Contactez-nous</h3>
+          <p>+33 523-483243</p>
+          <a href="mailto:LGE@gmail.com" class="link">BFC-ECLAT@gmail.com</a>
+        </div>
 
+        <div class="box">
+          <h3>Localisation</h3>
+          <p>
+            Erasme <br />
+            21000 Dijon<br />
+            France
+          </p>
+        </div>
+      </div>
+
+      <div class="credit">
+        Made with &hearts; by khalid oumima | Tous droits réservés 2025 &copy;
+      </div>
     </section>
-
 
     <script src="./assets/js/main.js"></script>
     <script src="./assets/js/utils.js"></script>
-</body>
-
+  </body>
 </html>
