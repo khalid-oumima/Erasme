@@ -630,8 +630,8 @@ nav .fa {
   text-transform: uppercase;
   letter-spacing: 0.4rem;
   text-align: center;
-  margin-bottom: 0.4rem;
-  padding-top: 20px;
+  margin-bottom: 1.4rem;
+  padding-top: 3.5rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -1228,14 +1228,6 @@ hr {
   padding-bottom: 3%;
 }
 
-.campus h1,
-.facilities h1,
-.testimonials h1 {
-  color: var(--secondary);
-  font-family: "Montserrat", sans-serif;
-  padding: auto;
-  margin-top: 4%;
-}
 
 .campus p,
 .facilities p,
