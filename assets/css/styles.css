@@ -352,6 +352,7 @@ nav .fa {
  .nav-links {
   position: absolute;
   background: gray;
+  filter: blur(4px);
   height: 100vh;
   width: 180px;
   top: 0;
