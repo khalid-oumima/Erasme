@@ -442,12 +442,6 @@ nav .fa {
 }
 
 /* EN CE MOMENT */
-@media screen and (ùax-width: 768px) {
- .card-content {
-  padding: 16px;
- }
-}
-
 .flex-container {
  display: flex;
  flex-wrap: wrap;
@@ -541,7 +535,20 @@ nav .fa {
   font-size: 0.6em;
  }
 }
-
+@media screen and (ùax-width: 768px) {
+ /*.card-content {
+  padding: 16px;
+ }
+}*/
+/*TEST 20/03/2025*/
+    .flex-container {
+      flex-wrap: nowrap;
+      overflow-x: scroll;
+    }
+    .flex-container .card {
+       flex: auto 0 0;
+    }
+   }
 /* EN CE MOMENT */
 /* NOS FORMATIONS */
 .subjects {
