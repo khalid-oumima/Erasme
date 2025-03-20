@@ -535,7 +535,7 @@ nav .fa {
   font-size: 0.6em;
  }
 }
-@media screen and (ùax-width: 768px) {
+@media (max-width: 768px) {
  /*.card-content {
   padding: 16px;
  }
