@@ -536,11 +536,11 @@ nav .fa {
  }
 }
 @media (max-width: 768px) {
- /*.card-content {
+ .card-content {
   padding: 16px;
  }
-}*/
-/*TEST 20/03/2025*/
+}
+/*TEST 20/03/2025
     .flex-container {
       flex-wrap: nowrap;
       overflow-x: scroll;
@@ -551,7 +551,7 @@ nav .fa {
     }
 	.flex-container .card img {
           object-fit: cover;
-       }
+       }*/
    }
 /* EN CE MOMENT */
 /* NOS FORMATIONS */
