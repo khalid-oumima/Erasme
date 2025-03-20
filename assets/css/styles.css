@@ -359,7 +359,7 @@ nav .fa {
   display: none;
   text-align: left;
   z-index: 2;
-  transition: width 0.5s linear 1s;
+  transition: width 1s ease;
  }
 
  nav .fa {
